@@ -1,0 +1,31 @@
+# 🌟 Core Dependencies
+python-dotenv==1.0.1             # For environment variables (.env)
+langchain==0.2.2                 # LangChain core framework
+langchain-community==0.2.3       # Community integrations (Chroma, Hugging Face, etc.)
+
+# 🤖 Embeddings
+sentence-transformers==2.2.2     # For HuggingFaceEmbeddings
+scikit-learn==1.5.2              # For cosine similarity, etc.
+
+# 🧠 Gemini API Integration
+langchain-google-genai==0.0.11   # For using Gemini 2.5 Flash via LangChain
+google-generativeai==0.8.3       # Native Google API client (for fallback or testing)
+
+# 💾 Vector Database
+chromadb==0.5.0                  # Local vector store for RAG
+
+# 📄 Document Loading & Processing
+unstructured==0.14.4             # For document parsing
+markdown==3.6                    # Markdown file support
+# Optional: for markdown splitting and parsing
+# pip install "unstructured[md]" after requirements installation
+
+# ⚙️ Utility Tools
+tqdm==4.66.5                     # For progress bars
+numpy==1.26.4                    # Required by embeddings & sklearn
+pandas==2.2.3                    # Optional, for structured data management
+
+# 🧹 Platform Compatibility Notes
+# For Mac users: install ONNXRuntime manually
+# conda install onnxruntime -c conda-forge
+# For Windows users: ensure Microsoft Visual C++ Build Tools installed
