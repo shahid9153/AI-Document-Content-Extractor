@@ -76,34 +76,24 @@ Create a .env file in your project root and add your Gemini API key:
 GEMINI_API_KEY=your_gemini_flash_2_5_key_here
 
 5️⃣ Run the App
-streamlit run app.py ```
+streamlit run app.py 
+---
 
+**🧠 How It Works**
 
+1] Load & Parse → The app loads the PDF using LangChain’s PyPDFLoader.
 
-🧠 How It Works
+2] Extract Topics → Detects major headings using regex and builds topic-based sections.
 
-Load & Parse → The app loads the PDF using LangChain’s PyPDFLoader.
+3] Vectorization → (Optional for RAG) Converts document chunks into vector embeddings via FAISS.
 
-Extract Topics → Detects major headings using regex and builds topic-based sections.
+4] AI Summarization → Sends extracted text to Gemini 2.5 Flash for concise summarization.
 
-Vectorization → (Optional for RAG) Converts document chunks into vector embeddings via FAISS.
+5] UI Display → Streamlit presents extracted content and summaries in a clean layout.
 
-AI Summarization → Sends extracted text to Gemini 2.5 Flash for concise summarization.
+---
 
-UI Display → Streamlit presents extracted content and summaries in a clean layout.
-
-📘 Smart AI Document Content Extractor
-────────────────────────────────────
-✅ PDF processed successfully with 10 topics
-
-📖 Extracted Topics:
-1. INTRODUCTION
-   → Discusses the background and importance of renewable energy.
-2. METHODOLOGY
-   → Explains data collection and analysis techniques.
-...
-
-✨ Summary:
+**✨ Summary:**
 This document explores the role of renewable energy in sustainable development. 
 It outlines current challenges and proposes solutions focused on policy and innovation.
 
@@ -120,11 +110,7 @@ It outlines current challenges and proposes solutions focused on policy and inno
 💬 Chat memory for continuous Q&A
 
 🧭 Quick Summary
+---
 
 ✅ Upload → 🧠 Extract → ✨ Summarize → 📄 Understand — All in seconds!
 Your smart companion for document understanding and summarization.
-
-Developed by: Shahid Mulani
-Powered by: LangChain · Gemini 2.5 Flash · Streamlit · FAISS · HuggingFace
-
-🌟 If you found this project useful, please star ⭐ the repository to show your support!
