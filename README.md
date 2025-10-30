@@ -44,17 +44,20 @@ It reads your PDFs, extracts structured content (topics and text), and generates
 📁 Smart-AI-Document-Extractor/
 │
 ├── app.py # Main Streamlit application file
+
 ├── .env # Environment variable file (contains API key)
+
 ├── requirements.txt # Python dependencies
+
 └── README.md # Project documentation
 
 
 ---
 
-## ⚙️ Installation & Setup
+⚙️ Installation & Setup
 
-### 1️⃣ Clone the Repository
-```bash
+ ###1️⃣ Clone the Repository
+bash
 git clone https://github.com/your-username/smart-ai-document-extractor.git
 cd smart-ai-document-extractor
 
@@ -73,7 +76,9 @@ Create a .env file in your project root and add your Gemini API key:
 GEMINI_API_KEY=your_gemini_flash_2_5_key_here
 
 5️⃣ Run the App
-streamlit run app.py
+streamlit run app.py ```
+
+
 
 🧠 How It Works
 
