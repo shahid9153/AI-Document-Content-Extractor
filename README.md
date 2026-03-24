@@ -1,4 +1,4 @@
-# 📘 Smart AI Document Content Extractor
+# 📘 Smart AI Document Content Extractor Using RAG
 
 > 🚀 An intelligent PDF document analysis tool powered by **Google Gemini 2.5 Flash** and **LangChain**.  
 > Upload any PDF and instantly extract topics, summarize content, and explore key insights — all inside a clean Streamlit interface.
