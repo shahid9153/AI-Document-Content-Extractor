@@ -43,6 +43,7 @@ It reads your PDFs, extracts structured content (topics and text), and generates
 
 📁 Smart-AI-Document-Extractor/
 │
+
 ├── app.py # Main Streamlit application file
 
 ├── .env # Environment variable file (contains API key)
